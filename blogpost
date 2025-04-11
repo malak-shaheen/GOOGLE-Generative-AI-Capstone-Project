@@ -1,0 +1,20 @@
+Use Case Chosen:
+
+The chosen use case is to summarize YouTube videos automatically by extracting key ideas and providing a structured summary, which helps viewers quickly grasp the main points without watching the entire video.
+Problem/Idea:
+
+    Problem: With the vast amount of content on YouTube, watching long videos to extract important information can be time-consuming. Sometimes, viewers only want a brief overview or key points from the video rather than sitting through the entire length. The challenge is creating an efficient system that can automatically transcribe and summarize the content.
+
+    Idea: The idea is to create an AI-powered tool that takes a YouTube video URL, extracts the audio, transcribes it, and then generates a concise summary. This system should divide the content into manageable chunks, summarize them, and present the user with key points in a structured format (JSON).
+
+How You Solve It with Gen AI:
+
+    Generative AI (especially using models like Whisper for transcription and Transformers for summarization) is used to:
+
+        Transcribe Audio: The audio from the YouTube video is extracted and transcribed into text using Whisper, a speech-to-text model. This enables us to convert spoken content into a textual form.
+
+        Summarization: After the transcription, the text is broken into smaller chunks. Each chunk is then passed to a Transformer-based model (like BART, T5, or GPT) to summarize it into concise and coherent ideas.
+
+        Structured Output: The summaries and the original transcript are returned in a structured JSON format, making it easier for users or other systems to access the information.
+
+This process allows the user to quickly grasp the important ideas from a video, saving time and effort while leveraging Generative AI to automate the tasks of transcription and summarization.
